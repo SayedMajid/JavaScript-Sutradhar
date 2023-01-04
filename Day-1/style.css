@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#mainFrame {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputBox1,
+#inputBox2,
+#inputBox3 {
+  height: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+
+#calcBtn {
+  padding: 8px;
+  background: teal;
+  color: white;
+  border: unset;
+  border-radius: 4px;
+}
+
+#parentBox {
+  border: 1px solid;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(119, 226, 226);
+}
+
+#parentBox:hover {
+  background-color: bisque;
+}
+
+#parentBox > p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#secondBox {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#secondBox > button {
+  padding: 6px;
+  border: unset;
+  background-color: rgb(230, 77, 77);
+  color: white;
+  border-radius: 4px;
+}
+
+/* CSS Selectors */
