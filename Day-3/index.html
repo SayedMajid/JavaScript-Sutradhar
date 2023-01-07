@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors and Combinators</title>
+  </head>
+  <style>
+    /*
+     div {
+      border: 1px solid red;
+      padding: 12px;
+    }
+
+
+    .child1 ~ p {
+      color: brown;
+    }
+
+    #parent1 div {
+      border: 1px solid;
+      padding: 12px;
+    }
+
+    #fancy {
+      color: red;
+    }
+
+    .plate1 > p, .plate2 > p {
+        border: 1px solid black;
+    }
+    */
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    /* Inline : more weightage : 1000, id : 100, class : 10, tags : 1*/
+
+
+    .plate {
+        border: 1px solid greenyellow;
+    }
+
+    #plate {
+        border: 1px solid;
+    }
+
+    #box:first-child {
+        color: teal;
+    }
+
+    #box:hover {
+
+    }
+
+    #box::after
+
+    /* DRY : DO-NOT REPEAT YOURSELF */
+  </style>
+  <body>
+    <!-- Parent element -->
+    <!-- Types of selectors and combinators : descendant ( space ), child ( > ), adjacent sibling ( + ) and general sibling ( ~ ) -->
+    <!-- Tag selector -->
+    <div id="table">
+      <!-- Childrens, p tags are siblings among each others -->
+      <div class="plate1" style="border: unset">
+        <div>
+          <p>Paragraph</p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <p></p>
+      </div>
+      <div class="plate2">
+        <p></p>
+        <p></p>
+      </div>
+      <div id="box">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+      </div>
+    </div>
+  </body>
+</html>
